@@ -31,3 +31,26 @@ else:
 - Extend validation rules for additional citation categories.
 - Integrate with a database or API for dynamic rule updates.
 - Provide more detailed error messages and suggestions for correction.
+
+# Main Processing Script
+
+This script serves as the central processing pipeline for citations. It integrates various modules to extract, validate, enrich, standardize, and store citations. The script demonstrates how to process a single citation through these steps and provides logging for each stage.
+
+## Usage
+
+The `process_citation` function is the main entry point for processing a citation. It takes a raw citation text as input and processes it through the pipeline. The script includes an example citation for demonstration purposes.
+
+```python
+citation_text = "Doe, J. (2022). A study of citations. Journal of Information Science, 10(2), 123-145."
+process_citation(citation_text)
+```
+
+## Key Features
+- **Integration with Modules**: Utilizes modules for entity extraction, validation, enrichment, standardization, and database storage.
+- **Logging**: Provides detailed logging at each step for easy debugging and monitoring.
+- **Error Handling**: Includes error handling to ensure smooth processing of citations.
+
+## Future Enhancements
+- Expand the pipeline to handle different citation categories dynamically.
+- Implement parallel processing for handling multiple citations simultaneously.
+- Integrate with a user interface for real-time citation processing.
